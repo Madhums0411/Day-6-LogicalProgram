@@ -6,6 +6,7 @@ Console.WriteLine("Enter 2 for Perfect Numbers");
 Console.WriteLine("Enter 3 for Prime numbers");
 Console.WriteLine("Enter 4 for Reverse number");
 Console.WriteLine("Enter 5 for Coupon Number");
+Console.WriteLine("Enter 6 for Stop Watch");
 
 
 int Problem = Convert.ToInt32(Console.ReadLine());
@@ -37,5 +38,9 @@ switch(Problem)
         Console.Write("How many numbers you wants to generate: ");
         int N = Convert.ToInt32(Console.ReadLine());
         CouponNumbersProblem.CouponNumber(N);
+        break;
+    case 6:
+        StopWatchProblem stopWatchProblem = new StopWatchProblem();
+        stopWatchProblem.StopWatch();
         break;
 }
